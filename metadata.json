@@ -1,0 +1,7 @@
+{
+  "name": "AuraOS - Aria Nexus",
+  "description": "A futuristic OS management dashboard featuring advanced system configurations for Java, Gradle, and AI-driven diagnostics powered by Gemini.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
