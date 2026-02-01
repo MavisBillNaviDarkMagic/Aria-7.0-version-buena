@@ -1,0 +1,5 @@
+https://github.com/google/gson.git
+https://github.com/mdo/sorige.git
+https://github.com/junit-team/junit4.git
+https://github.com/apache/maven.git
+https://github.com/elastic/elasticsearch.git

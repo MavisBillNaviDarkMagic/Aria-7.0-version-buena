@@ -1,0 +1,10 @@
+﻿2026-02-01T12:23:39.8373123Z Post job cleanup.
+2026-02-01T12:23:39.9309975Z [command]/usr/bin/git version
+2026-02-01T12:23:39.9345794Z git version 2.52.0
+2026-02-01T12:23:39.9387027Z Temporarily overriding HOME='/home/runner/work/_temp/bb1f1f9d-28b2-456d-be45-d8d22501d3aa' before making global git config changes
+2026-02-01T12:23:39.9388284Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-01T12:23:39.9392829Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Aria-Nexus-AuraOS/Aria-Nexus-AuraOS
+2026-02-01T12:23:39.9427665Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-01T12:23:39.9459647Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-01T12:23:39.9678716Z fatal: No url found for submodule path 'AuroraOs-' in .gitmodules
+2026-02-01T12:23:39.9719321Z ##[warning]The process '/usr/bin/git' failed with exit code 128

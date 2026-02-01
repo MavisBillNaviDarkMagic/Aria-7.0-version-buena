@@ -1,0 +1,72 @@
+﻿2026-02-01T12:23:03.8256198Z ##[group]Run actions/checkout@v4
+2026-02-01T12:23:03.8257123Z with:
+2026-02-01T12:23:03.8257842Z   repository: MavisBillNaviDarkMagic/Aria-Nexus-AuraOS
+2026-02-01T12:23:03.8258722Z   token: ***
+2026-02-01T12:23:03.8259149Z   ssh-strict: true
+2026-02-01T12:23:03.8259581Z   ssh-user: git
+2026-02-01T12:23:03.8260008Z   persist-credentials: true
+2026-02-01T12:23:03.8260498Z   clean: true
+2026-02-01T12:23:03.8260929Z   sparse-checkout-cone-mode: true
+2026-02-01T12:23:03.8261440Z   fetch-depth: 1
+2026-02-01T12:23:03.8261860Z   fetch-tags: false
+2026-02-01T12:23:03.8262295Z   show-progress: true
+2026-02-01T12:23:03.8262741Z   lfs: false
+2026-02-01T12:23:03.8263161Z   submodules: false
+2026-02-01T12:23:03.8263594Z   set-safe-directory: true
+2026-02-01T12:23:03.8264441Z ##[endgroup]
+2026-02-01T12:23:03.9375414Z Syncing repository: MavisBillNaviDarkMagic/Aria-Nexus-AuraOS
+2026-02-01T12:23:03.9377681Z ##[group]Getting Git version info
+2026-02-01T12:23:03.9378625Z Working directory is '/home/runner/work/Aria-Nexus-AuraOS/Aria-Nexus-AuraOS'
+2026-02-01T12:23:03.9380135Z [command]/usr/bin/git version
+2026-02-01T12:23:03.9512908Z git version 2.52.0
+2026-02-01T12:23:03.9540387Z ##[endgroup]
+2026-02-01T12:23:03.9554199Z Temporarily overriding HOME='/home/runner/work/_temp/aefc58d4-903d-4ede-bb42-3fbcf4567008' before making global git config changes
+2026-02-01T12:23:03.9555713Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-01T12:23:03.9568335Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Aria-Nexus-AuraOS/Aria-Nexus-AuraOS
+2026-02-01T12:23:03.9616217Z Deleting the contents of '/home/runner/work/Aria-Nexus-AuraOS/Aria-Nexus-AuraOS'
+2026-02-01T12:23:03.9620186Z ##[group]Initializing the repository
+2026-02-01T12:23:03.9626333Z [command]/usr/bin/git init /home/runner/work/Aria-Nexus-AuraOS/Aria-Nexus-AuraOS
+2026-02-01T12:23:03.9751379Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-02-01T12:23:03.9752778Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-02-01T12:23:03.9753757Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-02-01T12:23:03.9754495Z hint: call:
+2026-02-01T12:23:03.9755114Z hint:
+2026-02-01T12:23:03.9755932Z hint: 	git config --global init.defaultBranch <name>
+2026-02-01T12:23:03.9757218Z hint:
+2026-02-01T12:23:03.9758541Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-02-01T12:23:03.9760223Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-02-01T12:23:03.9761437Z hint:
+2026-02-01T12:23:03.9761879Z hint: 	git branch -m <name>
+2026-02-01T12:23:03.9762359Z hint:
+2026-02-01T12:23:03.9762980Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-02-01T12:23:03.9764128Z Initialized empty Git repository in /home/runner/work/Aria-Nexus-AuraOS/Aria-Nexus-AuraOS/.git/
+2026-02-01T12:23:03.9776769Z [command]/usr/bin/git remote add origin https://github.com/MavisBillNaviDarkMagic/Aria-Nexus-AuraOS
+2026-02-01T12:23:03.9821601Z ##[endgroup]
+2026-02-01T12:23:03.9822434Z ##[group]Disabling automatic garbage collection
+2026-02-01T12:23:03.9823114Z [command]/usr/bin/git config --local gc.auto 0
+2026-02-01T12:23:03.9854549Z ##[endgroup]
+2026-02-01T12:23:03.9855302Z ##[group]Setting up auth
+2026-02-01T12:23:03.9865631Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-01T12:23:03.9901835Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-01T12:23:04.0303723Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-01T12:23:04.0335573Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-01T12:23:04.0586116Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-01T12:23:04.0625081Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-01T12:23:04.0944468Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-02-01T12:23:04.0980373Z ##[endgroup]
+2026-02-01T12:23:04.0981165Z ##[group]Fetching the repository
+2026-02-01T12:23:04.0990212Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a47888a96ffcf246609c61fe823fad89fc02ce9a:refs/remotes/origin/main
+2026-02-01T12:23:05.4819891Z From https://github.com/MavisBillNaviDarkMagic/Aria-Nexus-AuraOS
+2026-02-01T12:23:05.4822625Z  * [new ref]         a47888a96ffcf246609c61fe823fad89fc02ce9a -> origin/main
+2026-02-01T12:23:05.4852245Z ##[endgroup]
+2026-02-01T12:23:05.4853450Z ##[group]Determining the checkout info
+2026-02-01T12:23:05.4855088Z ##[endgroup]
+2026-02-01T12:23:05.4859644Z [command]/usr/bin/git sparse-checkout disable
+2026-02-01T12:23:05.4903406Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-02-01T12:23:05.4931924Z ##[group]Checking out the ref
+2026-02-01T12:23:05.4935317Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-02-01T12:23:05.9430341Z Switched to a new branch 'main'
+2026-02-01T12:23:05.9431102Z branch 'main' set up to track 'origin/main'.
+2026-02-01T12:23:05.9460490Z ##[endgroup]
+2026-02-01T12:23:05.9500785Z [command]/usr/bin/git log -1 --format=%H
+2026-02-01T12:23:05.9523469Z a47888a96ffcf246609c61fe823fad89fc02ce9a

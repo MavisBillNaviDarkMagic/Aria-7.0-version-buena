@@ -1,0 +1,22 @@
+
+{
+  "packageId": "com.nexus.aria.ultra",
+  "host": "aria-lifesync.vercel.app",
+  "name": "Aria Nexus",
+  "shortName": "Aria",
+  "display": "standalone",
+  "themeColor": "#030308",
+  "navigationColor": "#030308",
+  "backgroundColor": "#030308",
+  "enableNotifications": true,
+  "startUrl": "/",
+  "iconUrl": "https://cdn-icons-png.flaticon.com/512/825/825590.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./aria_prod.keystore",
+    "alias": "aria_alias"
+  },
+  "appVersionCode": 5,
+  "appVersionName": "5.0.0",
+  "generatorApp": "bubblewrap-cli"
+}

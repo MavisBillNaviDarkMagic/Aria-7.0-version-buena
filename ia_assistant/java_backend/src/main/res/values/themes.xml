@@ -1,0 +1,7 @@
+
+<resources>
+    <!-- Tema base de la aplicación -->
+    <style name="Theme.AuraOS" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Personaliza tu tema aquí. -->
+    </style>
+</resources>

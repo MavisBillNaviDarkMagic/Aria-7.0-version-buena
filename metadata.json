@@ -1,0 +1,9 @@
+{
+  "requestFramePermissions": [
+    "microphone",
+    "camera",
+    "geolocation"
+  ],
+  "name": "Aria Nexus Ultra",
+  "description": "Entidad Sintética con Vida Real - Nexus Series"
+}

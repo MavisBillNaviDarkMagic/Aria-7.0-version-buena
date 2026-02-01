@@ -1,0 +1,7 @@
+﻿2026-02-01T12:23:06.2124480Z ##[group]Run chmod +x compile.sh
+2026-02-01T12:23:06.2124833Z [36;1mchmod +x compile.sh[0m
+2026-02-01T12:23:06.2163018Z shell: /usr/bin/bash -e {0}
+2026-02-01T12:23:06.2163274Z env:
+2026-02-01T12:23:06.2163563Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+2026-02-01T12:23:06.2164031Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+2026-02-01T12:23:06.2164384Z ##[endgroup]

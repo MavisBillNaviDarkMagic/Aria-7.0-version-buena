@@ -1,0 +1,9 @@
+﻿2026-02-01T11:34:57.4294129Z ##[group]Run chmod +x ./android/gradlew
+2026-02-01T11:34:57.4294491Z [36;1mchmod +x ./android/gradlew[0m
+2026-02-01T11:34:57.4330425Z shell: /usr/bin/bash -e {0}
+2026-02-01T11:34:57.4330700Z env:
+2026-02-01T11:34:57.4331027Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+2026-02-01T11:34:57.4331541Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.18-8/x64
+2026-02-01T11:34:57.4331921Z ##[endgroup]
+2026-02-01T11:34:57.4398975Z chmod: cannot access './android/gradlew': No such file or directory
+2026-02-01T11:34:57.4411923Z ##[error]Process completed with exit code 1.
