@@ -1,4 +1,21 @@
+
 #!/bin/bash
-export JAVA_HOME=/nix/store/hjqlrb1224nrxvci6fx4k9kh9s8mdnv3-openjdk-17.0.17+8/lib/openjdk
-export PATH=$JAVA_HOME/bin:$PATH
-./apache-maven-3.9.6/bin/mvn -f ia_assistant/java_backend/pom.xml compile
+echo ">>> ARIA NEXUS PRIME: INICIANDO RECOPILACIÓN UNIFICADA <<<"
+
+# 1. Limpieza
+rm -rf dist
+rm -rf android/app/build
+
+# 2. Build Web
+npm install
+npm run build
+
+# 3. Sync Android
+npx cap sync android
+
+# 4. Gradle Build (Fuerza bruta sobre permisos)
+cd android
+chmod +x gradlew
+./gradlew assembleRelease
+
+echo ">>> COMPILACIÓN FINALIZADA CON ÉXITO <<<"
