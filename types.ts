@@ -1,87 +1,13 @@
 
-export enum View {
-  DASHBOARD = 'DASHBOARD',
-  SETTINGS = 'SETTINGS',
-  TERMINAL = 'TERMINAL',
-  AI_CORE = 'AI_CORE',
-  EVOLUTION = 'EVOLUTION'
-}
-
-export interface BuildNode {
-  id: string;
-  status: 'SUCCESS' | 'FAILED' | 'IN_PROGRESS';
-  timestamp: Date;
-  version: string;
-  hash: string;
-}
-
 export interface SystemConfig {
-  // Identidad
-  name: string;
-  version: string;
-  deviceId: string;
-  remoteRepo: string;
-  nexusStatus: string;
-  consciousnessLevel: number;
-
-  // Entorno Técnico
   javaHome: string;
   gradleHome: string;
-  gradleVersion: string;
-  javaVersion: string;
   jvmOptions: string;
-  androidVersion: string;
-  sdkLevel: number;
-  environmentVariables: Record<string, string>;
-
-  // IA Persona
-  aiPersona: {
-    tone: 'FORMAL' | 'CREATIVE' | 'LOGICAL' | 'AGGRESSIVE';
-    autonomy: number;
-    responseSpeed: number;
-    language: string;
-  };
-
-  // UI / UX
-  theme: {
-    primaryColor: string;
-    borderRadius: string;
-    blurIntensity: string;
-    fontScale: number;
-  };
-
-  // Seguridad y Permisos
-  permissions: {
-    camera: boolean;
-    microphone: boolean;
-    location: boolean;
-    storage: boolean;
-    biometrics: boolean;
-  };
-
-  // Red Avanzada
-  network: {
-    webhookUrl: string;
-    apiEndpoint: string;
-    heartbeatInterval: number;
-  };
+  environmentVariables: { [key: string]: string };
 }
 
-export interface SystemMetrics {
-  cpu: number;
-  ram: number;
-  disk: number;
-  uptime: string;
-  batteryLevel?: number;
-  resonance: number;
-  remoteSyncStatus: 'IDLE' | 'SYNCING' | 'SECURE' | 'OFFLINE';
-  neuralLoad: number;
-  buildHistory?: BuildNode[];
-}
-
-export interface ChatMessage {
-  role: 'user' | 'aura';
-  content: string;
-  timestamp: Date;
-  intent?: string;
+export interface View {
+  id: string;
+  name: string;
+  component: React.FC;
 }

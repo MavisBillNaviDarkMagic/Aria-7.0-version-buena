@@ -152,10 +152,10 @@ export const Settings: React.FC<SettingsProps> = ({ config, onUpdate }) => {
               <h4 className="font-bold">Kernel Status</h4>
            </div>
            <div className="text-[10px] font-mono space-y-2 opacity-60">
-              <div>> CHECKING DESCRIPTORS... [OK]</div>
-              <div>> VERIFYING JAVA_HOME... [OK]</div>
-              <div>> GRADLE_DAEMON_PULSE... [OK]</div>
-              <div className="text-cyan-400 animate-pulse">> ALL SYSTEMS NOMINAL</div>
+              <div>&gt; CHECKING DESCRIPTORS... [OK]</div>
+              <div>&gt; VERIFYING JAVA_HOME... [OK]</div>
+              <div>&gt; GRADLE_DAEMON_PULSE... [OK]</div>
+              <div className="text-cyan-400 animate-pulse">&gt; ALL SYSTEMS NOMINAL</div>
            </div>
         </div>
       </div>
